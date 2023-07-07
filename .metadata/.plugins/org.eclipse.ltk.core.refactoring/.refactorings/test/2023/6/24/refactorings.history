@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.zetcode&apos; to &apos;playGUI/src&apos;&#x0D;&#x0A;- Original project: &apos;test&apos;&#x0D;&#x0A;- Destination element: &apos;playGUI/src&apos;&#x0D;&#x0A;- Original element: &apos;test/src/com.zetcode&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=playGUI/src" element1="/src&lt;com.zetcode" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1686807359983" version="1.0"/>
+</session>

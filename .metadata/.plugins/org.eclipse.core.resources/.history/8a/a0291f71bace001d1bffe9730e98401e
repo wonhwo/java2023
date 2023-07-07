@@ -1,0 +1,49 @@
+package Memojang;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.*;
+
+public class Memomain extends JFrame implements ActionListener {
+	public Memomain() {
+		setTitle("레삐의 메모장");
+		MainView();
+		setBounds(800,200,500,700);
+		setVisible(true);
+	}
+	public void MainView() {
+		KeyStroke Key;
+		JMenuBar mb = new JMenuBar();
+		JMenu m1,m2,m3,m4,m5;
+		JMenuItem item;
+		m1=new JMenu("파일(F)");m1.setMnemonic(KeyEvent.VK_F);
+		item = new JMenuItem("새로 만들기");
+		Key = KeyStroke.getKeyStroke(KeyEvent.VK_N,ActionEvent.CTRL_MASK);
+		item.setAccelerator(Key);
+		item.addActionListener(this);
+		m1.add(item);
+		////////////////////////////////////////////////////
+		m2=new JMenu("편집(E)");m2.setMnemonic(KeyEvent.VK_E);
+		m3=new JMenu("서식(O)");m3.setMnemonic(KeyEvent.VK_O);
+		m4=new JMenu("보기(V)");m4.setMnemonic(KeyEvent.VK_V);
+		m5=new JMenu("도움말(H)");m5.setMnemonic(KeyEvent.VK_H);
+		
+		
+		mb.add(m1);mb.add(m2);mb.add(m3);mb.add(m4);mb.add(m5);
+		this.setJMenuBar(mb);
+	}
+
+	public static void main(String[] args) {
+		
+		new Memomain();
+
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+
+}
